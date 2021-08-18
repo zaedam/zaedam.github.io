@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Zaeda Meherin</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="Pics/Logos/faviconZM.png"/>
+	<!-- CSS -->
+	<link rel='stylesheet' href='Home Page P.css' type='text/css'/>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175206865-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-175206865-1');
+	</script>
+	<!-- JS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="Home Page P.js"></script>	<!-- jQuery script must come before JS script -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Bubble Chart -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+	<!-- Font style import -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,300i,600');
+		@import url('https://fonts.googleapis.com/css?family=Sail');
+		@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+	</style>
+	<style>
+		a:link { text-decoration: none; 
+			color: white; }
+		a:visited { text-decoration: none; 
+			color: white; }
+		a:hover { text-decoration: none;  
+			color: white; }
+		a:focus { text-decoration: none; 
+			color: white; }
+		a:active { text-decoration: none;  
+			color: white; }
+	</style>
+</head>
+
+<body style="background-color: black;">
+<div id="loader"></div>
+<div id="body" style="display: none;">
+	<div class="PgOne white" id="PgOne">
+		<div class="navbar">
+			<div>
+				<a href="#PgTwo" onclick = "scrollToPgTwo()">about</a>
+			</div><div>
+				<a href="#PgSkills" onclick = "scrollToPgSkills()">skills & experience</a>
+			</div><div>
+				<a href="Resume.pdf" target="_blank">resume</a>
+			</div><div>
+				<a href="#PgFour" onclick = "scrollToPgFour()">contact</a>
+			</div>
+		</div>
+		<div class=main>
+			<div class="name mega-heading">Zaeda Meherin</div>
+		</div>
+	</div>
+	<div id=PgTwo class=PgTwo>
+		<div class=main2 id="main2">
+			<div class="AboutMe heading">About Me</div>
+			<div class="AbtSqSm AbsGoldSq Rhombus"></div>
+			<div class="AbtSq1 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq2 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq3 AbsGoldSq Rhombus"></div>
+			<div class="AbtLine1 AbsGoldSq"></div>
+			<div class="AbtLine2 AbsGoldSq"></div>
+			<div class="AbtLine3 AbsGoldSq"></div>
+			<div class="AbtLine4 AbsGoldSq"></div>
+			<div class="AbtLine5 AbsGoldSq"></div>
+			<div class="AbtLine6 AbsGoldSq"></div>
+			<!-- <img src="Pics/Transparent Patterns/Flower Quarter 2.png" class=Flower> -->
+		</div>
+		<div class="ME" id='ME'>
+			<img src="Pics/Backgrounds/Head Shot Old Cabell Touched Up Final.jpg" class="MeImg">
+			<img src="Pics/Head Shots/ME3.jpg" class="MeImgCircle">
+			<div class="MeBlurb white">
+				<span class=HiImZ>
+					Hi, I'm <span class="gold">Zaeda!</span>
+				</span>
+				<br><br><br class="br3" style="display: none;">
+				A <span class="abt-bold">computer science</span> major at the <span class="abt-bold">University of Virginia</span>. 
+				I love <span class="abt-bold">design and development</span>, which allow me to creatively
+				craft and build solutions for the end user. 
+				<br/><br/>
+				I am currently navigating my career path between 
+				<span class="abt-bold">product management</span> and <span class="abt-bold">software development</span>, 
+				including anything in between.
+			</div>
+		</div>
+	</div>
+	<div id="PgSkills" class=PgSkills>
+		<div class="main5" id=main5>
+			<div class="Skills heading" style="position: inherit;">Skills</div>
+			<!-- <div class="SkillsRh1 AbsGoldSq Rhombus"></div>
+			<div class="SkillsRh2 AbsGoldSq Rhombus"></div> -->
+			
+			<!-- <div class="AbtSq1 SkSq1 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq2 SkSq2 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq3 SkSq3 AbsGoldSq Rhombus"></div>
+			<div class="AbtLine1 SkLine1 AbsGoldSq"></div>
+			<div class="AbtLine2 SkLine2 AbsGoldSq"></div> -->
+		</div>
+		<div class="container">
+			<div class="row skwrapper">
+				<div class="col-sm-12 col-md-7">
+					<div class="Bubbles" id="Bubbles">
+						<figure class="highcharts-figure">
+							<div id="container"></div>
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-5 col-lg-4 pull-right" id="skillsDesc">
+					<div class="AbsGoldSq SkillsSq"></div>
+					<!-- https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/packed-bubble -->
+					<h1 style="line-height: 1.5em; z-index: 1; position: inherit;">
+						Here's an interactive chart of some of my technical and design skills.
+						Play with the bubbles and labels if you'd like!
+					</h1>
+					<br/><br/>
+					<span style="z-index: 1; position: inherit;">
+						If you'd like to know how I created this, I used the HighCharts library 
+						<a href="https://www.highcharts.com/?credits" target="_blank" style="color:#337AFD;">here</a>.
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id=PgThree class=PgThree>
+		<div class=main3 id=main3>
+			<div class="Experience heading">Experience</div>
+			<div class="ExperiRh1 AbsGoldSq"></div>
+			<div class="ExperiRh2 AbsGoldSq Rhombus"></div>
+		</div>
+		<div class=TransparentBox>
+			<div class="Student ExperiEntry" id=Student>
+				<div class=Logo>
+					<div class=Square id=Square>
+						<a href="https://www.virginia.edu/" target="_blank">
+							<div class="Sq1 AbsGoldSq"></div>
+							<div class="Sq2 AbsGoldSq"></div>
+							<img src="Pics/Logos/Tundie.png" class=LogoImg>
+							<div class=P>
+								<span class="SubheaderBold">University of Virginia</span>
+								<br/>
+								<span style="color: black;">2017-2021</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class=TextL>
+					<span class=Position>Student</span>
+					<hr class=hr>
+					I am currently finishing up my computer science studies at the University of Virginia. 
+					My school has allowed me to enrich my thinking through the humanities and dually gain technical skills.
+					It has provided me endless opportunies that's helping me carve out my path in the real world. With this,
+					I hope to complete one year at graduate school before pursuing a career in the tech industry.
+				</div>
+			</div>
+			<div class="C1 ExperiEntry" id=C1>
+				<div class=TextR>
+					<span class=Position>Software Engineer Intern</span>
+					<hr class=hr>
+					This summer, I worked at Capital One under the Technology Internship Program.
+					I taught myself completely new technologies in three months and built a pipeline in AWS from scratch.
+					This application is projected to save $1M in cost avoidance. Not only was I able to accomplish 
+					this and make tangible contributions, but I was also able to learn and grow as a person through the support of my team.
+					I discovered that software development cannot succeed in a vacuum: you succeed when your teammates succeed.
+					The values exhibited by this company truly inspires me.
+				</div>
+				<div class=Logo>
+					<div class=Square>
+						<a href="https://campus.capitalone.com/technology-program?id=internship" target="_blank">
+							<div class="Sq1 AbsGoldSq"></div>
+							<div class="Sq2 AbsGoldSq"></div>
+							<img src="Pics/Logos/Cap1.png" class=LogoImgLong>
+							<div class=P>
+								<span class="SubheaderBold">Capital One</span>
+								<br/>
+								<span style="color: black;">2020</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="TextL TextLSm">
+					<span class=Position>Software Engineer Intern</span>
+					<hr class=hr>
+					This summer, I worked at Capital One under the Technology Internship Program.
+					I taught myself completely new technologies in three months and built a pipeline in AWS from scratch.
+					This application is projected to save $1M in cost avoidance. Not only was I able to accomplish 
+					this and make tangible contributions, but I was also able to learn and grow as a person. 
+					I discovered that software development cannot succeed in a vaccum: you succeed when your teammates succeed. 
+					The values exhibited by this company truly inspires me.
+				</div>
+			</div>
+			<div class="TextEx ExperiEntry" id=TextEx>
+				<div class=Logo>
+					<div class=Square>
+						<a href="https://bookfairatuva.com/" target="_blank">
+							<div class="Sq1 AbsGoldSq"></div>
+							<div class="Sq2 AbsGoldSq"></div>
+							<img src="Pics/Logos/Bookfair.png" class=LogoImg>
+							<div class=P>
+								<span class="SubheaderBold">Bookfair</span>
+								<br/>
+								<span style="color: black;">2020-2021</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class=TextL>
+					<span class=Position>Program Manager</span>
+					<hr class=hr>
+					I worked with three classmates to build a textbook buy-sell web application. 
+					A strong belief in our work motivated us to bring our platform to UVA students. While we worked toward our campus-wide expansion plan,
+					I obtained funding and expanded the team of developers and product members. Together, we launched the site in spring of 2021. 
+					I continue work with the team to better the site and cultivate relationships.
+					Hustling alongside such ambitious and motivated peers, I learned to strive for quality beyond the end goal.
+					<br/><br/>
+					My experience as program manager has ignited my curiosity in product management 
+					and taught me not only leadership and management skills but also the importance of having a strong team bond.
+				</div>
+			</div>
+			<div class="RA ExperiEntry" id=RA>
+				<div class=TextR>
+					<span class=Position>Reasearch Assistant</span>
+					<hr class=hr>
+					As a research assistant, I created a GUI application that controls vibration devices worn on participants' arms.
+					This research was used to assess the effectiveness and possible uses of tactile alerts (signaled by the devices) for anesthesiologists.
+					This was my first opportunity to apply the concepts I learned outside of class.
+					After working with a brilliant PhD student and an amazingly encouraging supervisor to further fascinating research,
+					I was left with a deeper appreciation of the field that continues to impact me today.
+				</div>
+				<div class=Logo>
+					<div class=Square>
+						<a href="https://faculty.virginia.edu/sriggs/research.html" target="_blank">
+							<div class="Sq1 AbsGoldSq"></div>
+							<div class="Sq2 AbsGoldSq"></div>
+							<img src="Pics/Logos/RiggsLab.png" class=LogoImg>
+							<div class=P>
+								<span class="SubheaderBold">Riggs Lab | UVA</span>
+								<br/>
+								<span style="color: black;">2020</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="TextL TextLSm">
+					<span class=Position>Reasearch Assistant</span>
+					<hr class=hr>
+					As a research assistant, I created a GUI application that controls vibration devices worn on participants' arms.
+					This research was used to assess the effectiveness and possible uses of tactile alerts (signaled by the devices) for anesthesiologists.
+					This was my first opportunity to apply the concepts I learned outside of class.
+					After working with a brilliant PhD student and an amazingly encouraging supervisor to further fascinating research,
+					I was left with a deeper appreciation of the field that continues to impact me today.
+				</div>
+			</div>
+			<!-- <div class="CSSG ExperiEntry" id=CSSG>
+				<div class=Logo>
+					<div class=Square>
+						<div class="Sq1 AbsGoldSq"></div>
+						<div class="Sq2 AbsGoldSq"></div>
+						<img src="Pics/Logos/CSSG.png" class=LogoImgLong>
+						<div class=P>
+							<span class="SubheaderBold">CS + Social Good</span>
+							<br/>
+								<span style="color: black;">2019</span>
+						</div>
+					</div>
+				</div>
+				<div class=TextL>
+					<span class=Position>Project Lead - CitC Scheduler</span>
+					<hr class=hr>
+					Coming Soon
+				</div>
+			</div> -->
+		</div> <!-- END TransparentBox -->
+	</div> <!-- END PgThree -->
+	<div id="PgFour" class=PgFour>
+		<div class="main4">
+			<div class="Contact heading" id=Contact>Contact</div>
+			<div class="AbtSq1 SkSq1 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq2 SkSq2 AbsGoldSq Rhombus"></div>
+			<div class="AbtSq3 SkSq3 AbsGoldSq Rhombus"></div>
+			<div class="AbtLine1 SkLine1 AbsGoldSq"></div>
+			<div class="AbtLine2 SkLine2 AbsGoldSq"></div>
+		</div>
+		<!-- <div class=Form id="Form">
+			<form action="mailto:zm5du@virginia.edu" method="GET" enctype="text/plain" target="_blank">
+				<input type="text" name="subject" id="subject" class="input" placeholder="Subject"><br>
+				<textarea name="body" id="body" class="message-box" placeholder="Message"></textarea>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</div> -->
+		<div style="margin: 0 25px;">
+			<h3 class="text-center" style="font-family: 'Raleway', sans-serif;">
+				Want to learn more or see how I can help? Reach out to
+			</h3>
+			<h1 class="text-center" style="font-family: 'Sail', cursive">
+				zmeherin@gmail.com
+			</h1>
+		</div>
+	</div>
+	<div id=footer>
+		<div class="GoldBox">
+			<div class=SeeMore>Links</div>
+		</div>
+		<div class="Links">
+			<div class=GitHub>
+				<a href="https://github.com/zmeherin" target="_blank">
+					<img src="Pics/Logos/GH.png" class="GHImg">
+				</a>
+			</div>
+			<div class=LinkedIn>
+				<a href="https://www.linkedin.com/in/zaeda-meherin-29b9a9179/" target="_blank">
+					<img src="Pics/Logos/LI.png" class="LIImg">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
