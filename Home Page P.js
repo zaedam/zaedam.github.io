@@ -121,7 +121,7 @@ function makeBubbleChart() {
                     { name: "Feature", namept2: "Prioritization", value: 600 },
                     { name: "Beta", namept2: "testing", value: 200 }
                 ],
-                color: "#F3EAAF",
+                color: "#E9D96C",
                 marker: {
                     fillOpacity: 1
                 },
