@@ -93,7 +93,7 @@ function makeBubbleChart() {
                     { name: "Django", value: 1000 },
                     { name: "React", value: 75 },
                 ],
-                color: "#E9D96C",
+                color: "#EBDC78",
                 marker: {
                     fillOpacity: 1
                 },
@@ -108,7 +108,7 @@ function makeBubbleChart() {
                     { name: "CSS", value: 200 },
                     { name: "Bootstrap", value: 300 },
                 ],
-                color: "#A4672E",
+                color: "#AE7138",
                 marker: {
                     fillOpacity: 1
                 },
